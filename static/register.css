@@ -1,0 +1,29 @@
+*{
+  text-align: center;
+  padding: 0;
+  margin: 2px;
+}
+input{
+  width:30vw;
+  height: 3vw;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 1vw;
+  background-color: #eee;
+  border: none;
+
+}
+.sub{
+  margin: 100px;
+  background-color: rgba(24, 243, 214, 0.952)
+  ;cursor: pointer;
+}
+.sub:hover{
+  background-color: aqua;
+}
+.login{
+  font-size: large;
+  font-weight: bold;
+}
+.login:hover{
+  color: red;
+}

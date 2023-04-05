@@ -1,0 +1,54 @@
+
+#logo{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+}
+.form{
+    text-align: center;
+}
+input{
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    border:none;
+    background-color: #eeee;
+    text-align: center;
+    margin: 5px;
+}
+#userID,#password{
+    font-size: small;
+    font-family:'Courier New', Courier, monospace;
+}
+#forgetpassword{
+    font-weight: bold;
+    position: relative;
+    font-size:x-small;
+    left: 100px;
+    text-decoration: none;
+}
+
+
+.signup{
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+
+}
+.btn{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(24, 243, 243);
+}
+.btn:hover{
+    background-color: #7ff0ff;
+}
+.signup:hover{
+    color:red;
+}
+
+
+

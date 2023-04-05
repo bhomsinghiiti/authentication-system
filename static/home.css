@@ -1,0 +1,94 @@
+.logo{
+    /* position: absolute; */
+    width: 90px;
+    height: 90px;
+}
+.id{
+    background-color: #eee;
+    position: absolute;
+    right: 100px;
+    font-size: large;
+    top: 25px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#welcome{
+    display: block;
+    position: absolute;
+    top:  20px ;
+    left: 120px;
+    color: rgb(79, 79, 202);
+}
+.btn{
+   position: fixed;
+   text-decoration: none;
+   font-size: large;
+   background-color: rgb(55, 233, 224);
+   padding: 5px;
+   border-radius: 10px;
+   color: black;
+   top: 25px;
+   right: 20px;
+  
+
+}
+.btn:hover{
+    background-color: rgba(43, 211, 189, 0.973);
+}
+tr,td,th{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+table{
+    position: fixed;
+    display:none;
+    border-collapse: collapse;
+    width: 98vw;
+    top: 160px;
+
+  
+}
+.code{
+
+    width: 100px;
+    background-color: rgba(78, 221, 197, 0.178);
+    border-radius: 2px;
+}
+.course{
+    background-color:  #ffff0015;
+    text-align: center;
+    border-radius: 2px solid black;
+    
+}
+.credit{
+    background-color: #11fa3023;
+    text-align: center;
+    border-radius: 2px;
+}
+.ltp{
+  background-color: rgba(0, 38, 255, 0.082);
+  text-align: center;
+}
+.th th{
+    border: 2px solid black;
+    font-weight: bolder;
+    font-size: large;
+}
+#btn{
+    position: fixed;
+    text-decoration: none;
+    font-size: large;
+    cursor: pointer;
+    background-color: rgb(55, 233, 224);
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    bottom: 5px;
+    left: 5px;
+
+}
+#btn:hover{
+    background-color:rgba(28, 218, 145, 0.459);
+    
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> IITI Course Registration </title>
+  <link rel="stylesheet" href="/static/register.css">
+  <link class="logo" rel="shortcut icon" type="image/x-icon" href="/static/iitindore.ico">
+</head>
+
+<body>
+  <h1>Enter the following details </h1>
+  <br>
+  <form class="form" method="POST" action="{{url_for('register')}}">
+    <div class="msg">{{msg}}</div>
+    <input type="userID" name="userID" id="userID" placeholder="userID" required>
+    <br>
+    <input type="password" name="password" id="password" placeholder="password">
+    <br>
+    <input type="password" name="co_password" id="password" placeholder="conferm password">
+    <br>
+    <input type="text" name="mobile_no" id="mobile_no" placeholder="mobile_no">
+    <br>
+    <input class="sub" type="submit" value="submit" placeholder="submit">
+  </form>
+  <a style="text-decoration: none;" href="{{url_for('login')}}">Go to <b class="login">login</b> page </a>
+</body>
+
+</html>

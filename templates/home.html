@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="/static/home.css">
+    <link class="logo" rel="shortcut icon" type="image/x-icon" href="/static/iitindore.ico">
+    <head>
+        <header>
+            <div class="nav">
+                <img class="logo" src="/static/iiti_logo.png" alt="logo">
+               <h1 id="welcome">Wecome to IIT Indore</h1>
+                <div class="id"> {{msg}} </div>
+          </div>
+        </header>
+        <body>
+            <h1>Avilable courses </h1>
+            <table id="course_table">
+                <tr class="th">
+                    <th class=" code"> Course Code</th>
+                    <th class="course"> Course Name</th>
+                    <th class="ltp">Contact Hour</th>
+                    <th class="credit"> Credit</th>
+                </tr>
+                    {% for x in msg2 %}
+                <tr>
+                    <td class="code" >{{x.0}}</td><br>
+                    <td class="course">{{x.1}}</td>
+                    <td class="ltp">{{x.2}}</td>
+                    <td class="credit">{{x.3}}</td>
+                </tr>
+                  {% endfor %}
+            </table>
+        </body>
+        <a href="{{ url_for('login') }}" class="btn">Logout</a>
+        <div onclick="fun()" id="btn">Show Courses</div>
+        <script>
+         var a=0;
+          function fun(){
+              if(a==0)
+              {
+                document.getElementById('btn').innerHTML="Hide Courses";
+                document.getElementById('course_table').style.display="block";
+                return a=1;
+              }
+              else 
+              {
+                  document.getElementById('btn').innerHTML="Show Courses";
+                  document.getElementById('course_table').style.display="none"
+                  return a=0;
+                
+              }
+         }
+        </script
+
+</html>
